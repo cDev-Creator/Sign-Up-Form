@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+:root {
+    background-color:rgb(8, 8, 8);
+    color:rgb(255, 255, 255);
+    font-family: 'Roboto Mono', monospace;
+    --pink:rgba(136, 71, 138, 0.559);
+    --grey:rgb(190, 190, 190);
+
+}
+
+body {
+    margin: 0px; 
+    padding: 0px; 
+    width: 100%; 
+}
+
+a {
+    color:rgb(183, 183, 183);
+    text-decoration: none;
+}
+
+label{
+    /* puts labels on top of input boxes */
+    display: block;
+}
+
+.content {
+    display: flex;
+}
+
+.left-side {
+    background: url("City.jpg");
+    width: 40vw;
+    height: 100vh;
+    min-width: 400px;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align:center;
+}
+
+.brand-name {
+    background-color: var(--pink);
+    margin-top: 59vh;
+    padding:10px; 
+}
+
+.photo-credit {
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    margin-top: 29vh;
+    font-size:.8rem;
+    display:sticky;
+}
+
+.right-side {
+    display: flex;
+    width: 60vw;
+    flex-direction: column; 
+    min-width: 300px;
+}
+
+.top-text {
+    font-size: 1.5rem;
+    margin-left: 50px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex:.6;
+}
+
+.top-text p {
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.top-text p:first-child {
+    margin-top: 0;
+}
+
+.sign-up-section-container {
+    background-color: rgba(56, 56, 56, 0.559);
+    padding:15px;
+    padding-top:0px;
+}
+
+.sign-up-header {
+    margin-left: 40px; 
+    font-size: 1.1rem;
+}
+
+.sign-up-section {
+    display: flex;
+    margin-left: 30px;
+    flex-wrap: wrap; 
+    max-width: 500px;
+    min-width: 100px; 
+    column-gap: 50px;
+}
+
+.sign-up-section > div {
+    padding:10px;
+}
+
+label{
+    font-size: .9rem;
+    color: rgb(190, 190, 190);
+    padding-bottom: 3px;
+}
+
+input{
+    border:2px solid rgb(190, 190, 190);
+    border-radius: 5px;
+    width: 170px;
+    height:20px;
+}
+
+input:focus {
+    border:2px solid var(--pink);
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type="password"]:valid {
+    border: 1px soild green;
+}
+
+input[type="password"]:invalid {
+    border: 1px soild red;
+}
+
+.bottom-right {
+    margin-left: 50px; 
+    margin-top: 50px;
+}
+
+.sign-up-btn {
+    font-family: 'Roboto Mono', monospace;
+    width:160px;
+    height:50px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 3px solid var(--pink);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+.sign-up-btn:hover {
+    transition: all .3s ease-in-out; 
+
+    transform: scale(1.02);
+    
+
+}
+
+.log-in {
+    color: var(--pink);
+}
+@media (max-width: 560px) {
+   
+    .content {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .left-side {
+        width: 100vw;
+        height: 15vh; 
+    }
+    .brand-name {
+        margin-top:60px;
+        background-color: transparent;
+    }
+    .photo-credit{
+        display:none;
+    }
+
+    .right-side {
+        width: 100vw;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-text {
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+
+    .sign-up-section-container {
+        margin-top: 150px;
+    }
+
+    .bottom-right {
+        margin: 0px;
+        padding-top: 50px;
+    }
+    .sign-up-btn {
+        width:300px;
+        height:70px;
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+    }
+
+    .log-in{
+        
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+@media (max-width: 510px) {
+
+    label{
+        font-size: 1rem;
+        color: rgb(190, 190, 190);
+        padding-bottom: 3px;
+    }
+    
+    input{
+        border:2px solid rgb(190, 190, 190);
+        border-radius: 5px;
+        width: 310px;
+        height:30px;
+    }
+
+    .sign-up-section-container {
+        padding-left: 90px;
+        padding-right: 90px;
+        margin-top:50px;
+    }
+
+    .sign-up-header {
+        margin:8px;
+    }
+
+    .sign-up-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .sign-up-header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
