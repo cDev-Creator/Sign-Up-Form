@@ -1,6 +1,6 @@
 # Sign-Up-Form
 My first responsive web page. <br>
-Try adding in fake info and hitting create an account to see HTML form submission in action!<br>
+Try adding in fake info and hitting create account to see HTML form submission in action!<br>
 Desktop:
 ![Sign-Up Form](https://user-images.githubusercontent.com/76753452/155657822-73f793cb-80cc-4429-89eb-8be26fc9e782.png)<br>
 Mobile:<br>
