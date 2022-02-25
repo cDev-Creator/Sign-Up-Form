@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="results"></div>
+    <div class="content">
+        <a href="index.html" id="back">Back to sign-up form</a>
+
+        <!--js to get form working   -->
+        <script>
+            const resultsList = document.getElementById("results")
+            new URLSearchParams(window.location.search).forEach((value, name) => {
+                resultsList.append(`${name}: ${value}`)
+                resultsList.append(document.createElement('br'))
+                resultsList.classList.add("content")
+            })
+        </script>
+    </div>
+   
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+    * {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 1.5rem;
+        color: rgb(190, 190, 190);
+        background-color: rgb(8, 8, 8);
+        margin-bottom: 10px;
+    }
+
+    .content{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        margin-top: 10vh;
+        
+    }
+
+    #back {
+        margin-top: 30vh;
+    }
+
+    #back:hover {
+        color:rgba(136, 71, 138, 0.559);
+    }
+
+    @media (max-width: 560px) {
+        * {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+    }
+   
+</style>
+
+</body>
+</html>
